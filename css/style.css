@@ -1,0 +1,366 @@
+:root{
+    --pr-color :#3c65a3;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background-color: #e9edf5;
+}
+/* Navbar Style */
+
+.navbar {
+    z-index: 3;
+}
+
+/* navbar color  */
+.nav-color{
+    background-color: #7db1d6;
+    transition: all ease-in-out .3s;
+}
+.bg-transparent{
+    transition: all ease-in-out .3s;
+}
+
+* {
+    z-index: 2;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.nav-link {
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-link.active {
+    font-weight: 700;
+}
+
+
+
+/* Banner Style */
+
+.banner{
+	height: 100vh;
+	background-image:url('../assets/img/Heroo\ Banner.jpg') ;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.banner-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 200px;
+    font-weight: 700;
+}
+.banner H1{
+	font-size: 90px;
+	font-family: 'Kaushan Script', cursive;
+}
+.banner p{
+	font-size: 18px;
+	font-style: italic;
+
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(  15, 31, 42 , .4);
+}
+.banner-btn{
+   
+}
+
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 15px 25px;
+    color: #fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+
+
+}
+.banner-btn ul li{
+    display: inline-block;
+}
+.banner-btn a:hover{
+    width: 150%;
+    background-color: #fcfced;
+    color: #000;
+}
+
+/* About Section */
+
+#About{
+    padding: 100px 0;
+    background-color: #d6e8f5;
+}
+h2{
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--pr-color) ;
+}
+span{
+    font-size: 18px;
+    color: rgb(58, 55, 55);
+}
+p {
+    padding: 50px 0;
+}
+/* Card fasilitas */
+
+#fitur h2 {
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--pr-color);
+}
+
+/* Section Recomendasi */
+
+.card {
+    border: none;
+    width: 100%;  
+    
+}
+.card-body h4 {
+    color: #000;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: .8rem;
+}
+.card-body span{
+    font-weight: 500;
+    color: #000;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.card-fasilitas{
+    margin-top: 5px;
+}
+.card-fasilitas h6 {
+    margin-top: 10px;
+}
+.card:hover {
+    background: linear-gradient(170deg, var(--pr-color), #96bef5, #8bb1e9, #000);
+    box-shadow: 0 10px 20px rgba(0,0,0, .25);
+    transition: all ease-in-out .3s;
+    
+}
+.card:hover .card-body h4 {
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+.card:hover .card-body span {
+    color: #fff;
+    transition: all ease-in-out .3s;
+}
+.card-fasilitas span {
+    font-weight: 500;
+    margin-top: 18px;
+    color: #000;
+}
+
+/* fasilitas start */
+
+.fasilitas {
+    background-color: #d6e8f5;
+    padding: 50px 0;
+}
+.fasilitas .fasilitas-wrapper{
+    margin: auto;
+}
+.fasilitas-wrapper .row1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.row1 .heading-fasilitas{
+    font-size: 45px;
+    font-weight: 500;
+    color: var(--pr-color);
+    margin-top: 10px;
+}
+.row1 .toggle-slider i{
+    font-size: 2rem;
+    color: var(--pr-color);
+    cursor: pointer;
+}
+.fasilitas-wrapper .row2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.row2 .detail-fasilitas{
+    background-color: rgba(225, 225, 225, 0.479);
+    position: absolute;
+    bottom: -25%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    backdrop-filter:blur(3px);
+    box-shadow: 0 2px 5px rgba(rgb(0, 0, 0), 0.171 );
+    transition: .5s ease-in-out;
+
+}
+.fasilitas-wrapper .card-fasilitas{
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+    overflow-y: hidden;
+}
+.card-fasilitas:hover .detail-fasilitas{
+    bottom: 0;
+    transition: .5s ease-in-out;
+}
+.detail-fasilitas .tittle-card h1{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--heading-font);
+    color: #353535;
+    text-align: center;
+}
+/* footer */
+
+#footer {
+    padding: 100px 0 20px;
+    background: #e9edf5;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.footer-left, .footer-right {
+    flex-basis: 46%;
+    padding: 10px;
+    margin: 20px;
+    font-size: 14px;
+    
+}
+.footer-right {
+    text-align: right;
+}
+.footer-left{
+    text-align: left;
+}
+.footer-row h1{
+    font-size: 30px;
+
+}
+.footer-row p{
+    line-height: 30px;
+
+    
+}
+.footer-right p{
+    margin-bottom: -80px;
+}
+.footer-left i{
+    font-size: 20px;
+    color: #3c65a3;
+    margin: 5px;
+}
+.footer-right i{
+    font-size: 20px;
+    color: #3c65a3;
+    margin: 5px;
+
+}
+.social-links i{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #3c65a3;
+    margin: 30px 5px 0;
+    color: #3c65a3;
+    cursor : pointer;
+    transition: .5s;
+}
+.social-links i:hover{
+    background: #3c65a3;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+   
+}
+
+@media screen and (max-width: 770px){
+    .footer-left, .footer-right{
+        flex-basis: 100%;
+        font-size: 14px;
+    }  
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .banner-btn{
+        padding: 50px;
+        
+    }
+    h2{
+        font-size: 45px;
+    }
+    
+}
+@media screen and (max-width: 922px){
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    .banner-btn{
+        padding: 50px;
+    }
+}
+@media  screen and (max-width: 576px){
+    .banner-text h1{
+        font-size: 75px;
+        line-height: 60px ;
+    }
+    .banner-text p{
+        font-size: 12px;
+    }
+    .banner{
+       height: 90%;
+  
+    } 
+    h2{
+        font-size: 30px;
+    } 
+    .card-body h4 {
+        font-size: 18px;
+        line-height: .8rem; 
+    }
+    .card-body span{
+        font-size: 18px;
+    }
+    .card-fasilitas h6{
+        font-size: 13px;
+
+    }
+    .row1 .heading-fasilitas{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+}
